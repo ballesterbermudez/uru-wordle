@@ -1,13 +1,104 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+:root {
+  --color-primary: #043cb0;
+  --color-secondary: #c89916;
+  --color-primary-variant: #409ca0 ;
+  --color-secondary-variant: #7c3c04;
+  --color-light: #ffffff99;
+  --container-width-lg: 75%; 
+  --container-width-md: 86%; 
+  --container-width-sm: 90%;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+*{
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-color: white;
+  font-family: 'Merriweather', sans-serif;
+}
+
+.container{
+  width: var(--container-width-lg);
+  margin: auto;
+}
+
+button {
+  background-color: Transparent;
+  background-repeat:no-repeat;
+  border: none;
+  color: var(--color-secondary);
+  transition: transform .2s;
+  cursor: pointer;
+}
+
+button:hover {
+  transform: scale(1.3)
+}
+
+.cell {
+  background-color: white;
+  width: 50px;
+  height: 50px;
+  border-radius: 5px;
+  border-color:black;
+  border-width: 2px;
+  border-style: solid;
+  text-align: center;
+  line-height: 50px;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+.cell-correct {
+  background-color: rgb(74, 214, 74);
+  width: 54px;
+  height: 54px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 54px;
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+}
+
+.cell-present {
+  background-color: rgb(255, 187, 0);
+  width: 54px;
+  height: 54px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 54px;
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+}
+
+.cell-absent {
+  background-color: rgb(148, 148, 148);
+  width: 54px;
+  height: 54px;
+  border-radius: 5px;
+  text-align: center;
+  line-height: 54px;
+  font-size: 40px;
+  font-weight: bolder;
+  text-shadow: 1px 1px 1px black;
+  color: white;
+}
+
+.cell-wrapp {
+  display: flex;
+  justify-content: space-evenly;
+  height: 50px;
+  width: 300px;
+  margin: auto;
+  padding: 5px;
 }
