@@ -119,7 +119,7 @@ const Grid = () => {
                     <button onClick={toggle} className="closebtn"><AiFillCloseSquare/></button>
                     <div className="info-title">GANASTE WACHIN</div>
                     <div className="info">
-                        Ganaste pt de mierda
+                        Te ganaste un besito UwU
                     </div>
                 </div>
             </div>
