@@ -10,6 +10,11 @@ const Nav = () => {
     const toggle = () => {        
         setActive(!active);
     }
+
+    if(localStorage.getItem('firstTime') !== 'si') {
+        toggle();
+        localStorage.setItem('firstTime', 'si');
+    } 
     
     return (
         <nav>
