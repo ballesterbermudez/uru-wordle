@@ -7,7 +7,7 @@ import { VALID_GUESSES } from "../constants/validGuesses.ts"
 
 const Grid = () => {
 
-    var realWord = ["C", "E", "B", "A", "R"];
+    var realWord = ["B", "O", "N", "D", "I"];
     const [word, setWord] = useState("");
     const [cellclass, setCellClass] = useState(["cell", "cell", "cell", "cell", "cell", "cell", "cell", "cell","cell", "cell", "cell", "cell", "cell", "cell", "cell", "cell", "cell", "cell", "cell", "cell", "cell", "cell", "cell", "cell","cell", "cell", "cell", "cell", "cell", "cell"])
     const [min, setMin] = useState(0)
